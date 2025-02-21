@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <?xml version='1.0' encoding='utf-8'?>
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-container small-screen">
+          <ul>
+            <li class="hideSidebarBtn">
+              <a href="#" id="openBtn"
+                ><img src="./images/icon-menu.svg" alt="Site Logo"
+              /></a>
+            </li>
+
+            <li>
+              <a href="#" class="logo"
+                ><img src="./images/logo.svg" alt="Site Logo"
+              /></a>
+            </li>
+            <li class="hideNavlinks">
+              <a href="#" class="collection">Collection</a>
+            </li>
+            <li class="hideNavlinks"><a href="#" class="men">Men</a></li>
+            <li class="hideNavlinks"><a href="#" class="women">Women</a></li>
+            <li class="hideNavlinks"><a href="#" class="about">About</a></li>
+            <li class="hideNavlinks">
+              <a href="#" class="contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="cart-and-userImg">
+            <figure class="cart">
+              <img src="./images/icon-cart.svg" alt="cart icon" />
+              <span id="items-in-cart">0</span>
+            </figure>
+            <figure class="user-image">
+              <img src="./images/image-avatar.png" alt="user avatar" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="navbar-container big-screen">
+          <ul>
+            <li>
+              <a href="#" class="logo"
+                ><img src="./images/logo.svg" alt="Site Logo"
+              /></a>
+            </li>
+            <li class="hideNavlinks">
+              <a href="#" class="collection">Collection</a>
+            </li>
+            <li class="hideNavlinks"><a href="#" class="men">Men</a></li>
+            <li class="hideNavlinks"><a href="#" class="women">Women</a></li>
+            <li class="hideNavlinks"><a href="#" class="about">About</a></li>
+            <li class="hideNavlinks">
+              <a href="#" class="contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="cart-and-userImg">
+            <figure class="cart">
+              <img src="./images/icon-cart.svg" alt="cart icon" />
+              <span id="items-in-cart-2">0</span>
+            </figure>
+            <figure class="user-image">
+              <img src="./images/image-avatar.png" alt="user avatar" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <ul class="sidebar">
+          <li>
+            <a href="#" id="closeMenu"
+              ><img src="./images/icon-close.svg" alt="Site Logo"
+            /></a>
+          </li>
+          <li><a href="#" class="collection">Collection</a></li>
+          <li><a href="#" class="men">Men</a></li>
+          <li><a href="#" class="women">Women</a></li>
+          <li><a href="#" class="about">About</a></li>
+          <li><a href="#" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="product-container">
+        <div class="slider-container">
+          <img
+            src="./images/icon-previous.svg"
+            alt="previous"
+            class="arrow-left arrow"
+            id="prev"
+          />
+          <div class="carousel">
+            <img src="./images/image-product-1.jpg" alt="" class="images" />
+            <img src="./images/image-product-2.jpg" alt="" class="images" />
+            <img src="./images/image-product-3.jpg" alt="" class="images" />
+            <img src="./images/image-product-4.jpg" alt="" class="images" />
+          </div>
+          <img
+            src="./images/icon-next.svg"
+            alt="next"
+            class="arrow-right arrow"
+            id="next"
+          />
+        </div>
+
+        <div class="overlay-product-display">
+          <div class="overlay-product-container">
+            <div class="exit-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                fill="currentColor"
+              >
+                <path
+                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+
+            <div class="overlay-product">
+              <div class="overlay-featured-image">
+                <span class="overlay-prdct-nav left-nav">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="18"
+                    class="featured-image-left"
+                  >
+                    <path
+                      d="m2 1 8 8-8 8"
+                      stroke="#1D2026"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+
+                <img
+                  src="./images/image-product-1.jpg"
+                  alt="featured-image"
+                  id="overlay-featured"
+                />
+
+                <span class="overlay-prdct-nav right-nav">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="18"
+                    class="featured-image-right"
+                  >
+                    <path
+                      d="M11 1L3 9l8 8"
+                      stroke="#1D2026"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="thumbnails">
+                <img
+                  src="./images/image-product-1.jpg"
+                  alt="Image1-Thumbnail"
+                  class="thumbnail overlay-active"
+                />
+                <img
+                  src="./images/image-product-2.jpg"
+                  alt="Image1-Thumbnail"
+                  class="thumbnail"
+                />
+                <img
+                  src="./images/image-product-3.jpg"
+                  alt="Image1-Thumbnail"
+                  class="thumbnail"
+                />
+                <img
+                  src="./images/image-product-4.jpg"
+                  alt="Image1-Thumbnail"
+                  class="thumbnail"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Screen Size Product Overview -->
+        <div class="desktop-product-overview">
+          <img
+            src="./images/image-product-1.jpg"
+            alt="featured-image"
+            id="featured"
+          />
+
+          <div class="thumbnails">
+            <img
+              src="./images/image-product-1.jpg"
+              alt="Image1-Thumbnail"
+              class="thumbnail active"
+            />
+            <img
+              src="./images/image-product-2.jpg"
+              alt="Image1-Thumbnail"
+              class="thumbnail"
+            />
+            <img
+              src="./images/image-product-3.jpg"
+              alt="Image1-Thumbnail"
+              class="thumbnail"
+            />
+            <img
+              src="./images/image-product-4.jpg"
+              alt="Image1-Thumbnail"
+              class="thumbnail"
+            />
+          </div>
+        </div>
+
+        <div class="cart-list" id="cart-list">
+          <div>
+            <h4>Cart</h4>
+          </div>
+          <div class="product-in-cart" id="product-in-cart">
+            <div class="product">
+              <div>
+                <img
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="Product Thumbnail"
+                />
+                <div>
+                  <p>Fall Limited Edition Sneakers</p>
+                  <p>
+                    $125.00 x <span id="number-of-product">0</span> =
+                    <span id="amount">0</span>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="./images/icon-delete.svg"
+                id="delete-product"
+                class="delete-product"
+                alt=""
+              />
+            </div>
+            <button>Checkout</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-description">
+        <h4>sneaker company</h4>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="price-container">
+          <div class="current-price">
+            <h2>$125.00</h2>
+            <span class="percentage">50%</span>
+          </div>
+          <p>$250.00</p>
+        </div>
+
+        <div class="quantity-cart-button">
+          <div class="">
+            <img src="./images/icon-minus.svg" alt="" id="minus" />
+            <span id="quantity" class="quantity">0</span>
+            <img src="./images/icon-plus.svg" alt="" id="add" />
+          </div>
+          <button id="button">
+            <img src="./images/icon-cart.svg" alt="" /> Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
